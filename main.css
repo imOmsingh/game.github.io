@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+body{
+	background-color: rgb(26, 26, 29);
+	overflow-x: hidden;
+}
+
+
+.header{
+	justify-content: space-between;
+	padding:20px;
+	font-family: 'Bebas Neue', cursive;
+	font-style: italic;
+	background-color: rgb(26, 26, 29);
+	height: 60px;
+}
+.logo{
+	font-size: 32px;
+	margin: 0px 10px;
+	color: white;
+}
+.head-buts{
+	margin: 5px 5px;
+	display: flex;
+	flex-direction: row;
+}
+.but{
+	font-size: 20px;
+	margin: 0px 25px;
+	text-decoration: none;
+	color: initial;
+	color: rgb(195, 7, 63);
+}
+
+.but:hover{
+	cursor: pointer;
+	font-size: 30px;
+	color: rgb(0, 153, 51);
+}
+.menu-logo{
+	display: none;
+	cursor: pointer;
+}
+.menu-line{
+	width: 35px;
+  	height: 5px;
+  	background-color: black;
+  	margin: 6px 15px;
+}
+.toggle-menu{
+	background-color: rgb(242, 242, 242);
+	display: none;
+	flex-direction: column;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.14,0.93,0,1);
+}
+.tog-but{
+	height:45px;
+	font-size: 20px;
+	color:red;
+	cursor: pointer;
+	text-align: center;
+	margin:10px;
+	opacity: 0;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+.cross{
+	font-size: 40px;
+	cursor: pointer;
+	display: none;
+	margin: 0px 20px;
+}
+.tog-but:hover{
+	border: 2px grey solid;
+}
+.main-img img{
+	height:600px; 
+	width:780px;
+}
+.main-text{
+	cursor: pointer;
+	float: left;
+	font-size: 80px;
+	text-align: left;
+	width: 400px;
+	color: rgb(244, 182, 11);
+	font-style: italic;
+	margin-top: 45px;
+	font-family: 'DM Serif Display', serif;
+}
+.main-cont{
+	justify-content: space-around;
+}
+
+.card-cont{
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding:20px;
+	justify-content: space-around;
+	transform: translateX(-500px);
+	transform-style: flat;
+	transition: 5s;
+	perspective: 1000px;
+}
+.card{
+	perspective: 1000px;
+	box-shadow:0px 0px grey;
+	margin: 20px 30px;
+	padding: 5px;
+	height:350px;
+	width: 250px;
+	background-color: rgb(230, 230, 230);
+	border-radius: 10px;
+	backface-visibility: hidden;
+	cursor: pointer;
+}
+
+
+.card img{
+	border-radius: 10px;
+	height: 170px; 
+	width: 100%; 
+	text-align: center;
+	transition: 0.5s;
+	transform-origin: 25% 25%; 
+	cursor: pointer;
+}
+.card img:hover{
+	transform: translateZ(30px) rotate(-3deg);
+	box-shadow: 5px 5px 5px grey;
+}
+.card-text{
+	font-size: 40px;
+	font-family: 'Bakbak One', cursive;
+}
+#card-text-1{
+	color: rgb(153, 0, 204);
+}
+#card-text-2{
+	color: rgb(51, 51, 204);
+
+}
+#card-text-3{
+	color:rgb(172, 115, 57);
+	font-size: 33px;
+}
+#card-text-4{
+	color: rgb(255, 0, 102);
+	font-size: 35px;
+	margin-top: 30px;
+	text-align: center;
+}
+#card-text-5{
+	font-size: 35px;
+	color: rgb(92, 138, 138);
+}
+.card-but{
+	cursor: pointer;
+	text-align: center;
+	font-weight: 800;
+	margin: auto;
+	background-color: rgb(255, 128, 0);
+	padding: 5px;
+	border-radius: 10px;
+	font-family: 'Prompt', sans-serif;
+	width: 120px;
+}
+.card-but:hover{
+	box-shadow: 0px 5px 5px grey; 
+	transform: translateY(-5px);
+}
+.effect{
+	background-color: rgb(230, 230, 230);
+	box-shadow:0px 0px grey;
+	padding: 5px;
+	border-radius: 10px;
+	border:1px solid grey;
+}
+#card-effect{
+	transform: rotate(0deg);
+	transition-duration: 0.5s;
+	background-color: rgb(230, 230, 230);
+}
+#effect-1{
+	transform: translateZ(-500px);
+	background-color: rgb(230, 230, 230);
+	height: 350px;
+	width: 250px;
+	position: absolute;
+	top:-1px;
+	left:-1px;
+	transform: rotate(0deg);
+	transition-duration: 0.3s;
+}
+#effect-2{
+	background-color: rgb(230, 230, 230);
+	height: 350px;
+	width:250px;
+	position: absolute;
+	top:-1px;
+	left: -1px;
+	transform: rotate(0deg);
+	transition-duration: 0.5s;
+}
+#card-effect img{
+	height:90px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.dev-cont{
+	cursor: pointer;
+	perspective: 1000px;
+	background-color: none;
+	margin: 20px;
+	transform: translateX(600px) skewX(20deg);
+	padding:20px;	
+	transition: 1s;
+}
+.flip-cont{
+	background-color: rgb(66, 123, 245);
+	padding:20px; 
+	height: 360px;
+	width: 560px;
+	transform-style: preserve-3d;
+	transition-duration: 3s;
+	position: relative;
+	border-radius: 40px;
+	perspective: 1000px;
+}
+.flip-cont:hover{
+	transform: rotateY(180deg);
+}
+.flip-cont:hover .dev-front img{
+	transform: rotate(30deg);
+} 
+.dev-front img{
+	transition-duration: 3s;
+}
+.dev-front{
+	backface-visibility: hidden;
+	perspective: 10px;
+}
+.dev-back{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+}
+.back-text{
+	text-align: center;
+	height: 320px;
+	width: 520px;
+	padding: 10px;
+	padding-right: 50px;
+}
+.back-text-head{
+	font-family: 'Bakbak One', cursive;
+	font-size: 40px;
+	color: white;
+}
+.back-text-body{
+	font-weight: 600;
+	margin-top: 25px;
+	letter-spacing:3px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: black;
+	font-size: 25px;
+}
+.dev-cont-2{
+	display: none;
+	justify-content: space-evenly;
+	cursor: pointer;
+	perspective: 1000px;
+	background-color: none;
+	margin: 20px;
+	margin-bottom: 50px;
+	padding:20px;	
+}
+.flip-cont-2{
+	background-color: rgb(66, 123, 245);
+	padding:20px; 
+	height: 360px;
+	margin: 20px auto;
+	width: 560px;
+	transform-style: preserve-3d;
+	transition-duration: 3s;
+	position: relative;
+	border-radius: 40px;
+	perspective: 1000px;
+}
+.flip-cont-2:hover{
+	transform: rotateY(180deg);
+}
+
+.flip-cont-2:hover .dev-front-2 img{
+	transform: rotate(30deg);
+}
+.flip-cont-2:hover{
+	height: auto;
+}
+
+.dev-front-2 img{
+	transition-duration: 3s;
+}
+.dev-front-2{
+	backface-visibility: hidden;
+	perspective: 10px;
+}
+.dev-back-2{
+	position: absolute;
+	top: 0px;
+	text-align: center; 
+	left: 0px;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+}
+.back-text-2{
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	padding-right: 50px;
+}
+.back-text-head-2{
+	font-family: 'Bakbak One', cursive;
+	font-size: 40px;
+	color: white;
+}
+.back-text-body-2{
+	font-weight: 600;
+	margin-top: 25px;
+	letter-spacing:3px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: black;
+	font-size: 25px;
+}
+
+@keyframes toggle_menu_down{
+	from{height:0px;}
+	to{height: 460px;}
+}
+@keyframes toggle_menu_up{
+	from{height:460px;}
+	to{height: 0px;}
+}
+@keyframes menu_but_down{
+	from{opacity:0;}
+	to {opacity: 1;}
+}
+@keyframes menu_but_up{
+	from{opacity:1;}
+	to {opacity: 0;}
+}
+
+
+@media screen and (max-width: 1200px){
+	.main-text{
+		width: 100%;
+		text-align: center;
+		margin: 30px;
+}
+
+
+
+@media screen and (max-width:1000px) {
+	.header{
+		justify-content: space-around;
+	}
+	.but{
+		font-size: 17px;
+		margin: 5px 15px;
+	}
+	.but:hover{
+		font-size: 17px;
+		text-decoration: underline;
+	}
+}
+
+
+@media screen and (max-width: 875px){
+	.head-buts{
+		display: none;
+	}
+	.menu-logo{
+		display: block;
+	}
+	.main-img img{
+		height:500px; 
+		width:100%;
+	}
+	.main-text{
+		font-size: 60px;
+	}
+	.main-img{
+		margin: 0px 30px;
+		width: 100%;	
+	}
+	#dev_cont{
+		display: none;
+	}
+	.dev-cont-2{
+		display: flex;
+	}
+
+}
+
+@media screen and (max-width: 675px){
+	.main-text{
+		font-size: 40px;
+	}
+	.main-img img{
+		height:400px; 
+	}
+	.flip-cont-2{
+		width:auto;
+	}
+	.back-text-head-2{
+		font-size: 25px;
+	}
+	.back-text-body-2{
+		font-size: 20px;
+	}
+	
+}
+
+@media screen and (max-width: 400px){
+	#effect-1{
+		width: 100%;
+	}
+	#effect-2{
+		width:100%;
+	}
+	.flip-cont-2:hover{
+		height:450px;
+	}
+
+
+}
+
